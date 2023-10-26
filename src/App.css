@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.admpanel {
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 15px;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  position: fixed;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.admpanel_error {
+  border: 1px solid red;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.d-none {
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.red {
+  color: red;
+}
+.admpanel_active {
+  opacity: 1;
+}
+/* .fon {
+  background: darkslategrey;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+} */
+.admpanel__backfon_active {
+  display: block;
+}
+.admpanel__param {
+  display: inline-block;
+  width: 75px;
+}
+.admpanel__inpblock {
+  margin: 0 0 10px 0;
+}
+.admpanel__inpblockbut {
+  margin-top: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.admpanel__inp {
+  padding: 5px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  outline: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.admpanel__but {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px 17px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.admpanel__but:hover {
+  border: 1px solid rgb(75, 75, 75);
 }
