@@ -19,7 +19,7 @@ export default function Table1() {
         {data.map((item, ind, arr) => (
           <tr>
             <td className="td">
-              <input type="text" value={item.name} onChange={(e) => (arr[ind] = e.target.value)} />
+              <input type="text" value={item.name} onChange={(e) => (setData([...data, data[ind]]) = e.target.value)} />
             </td>
             <td className="td">
               <input type="text" value={item.email} />
