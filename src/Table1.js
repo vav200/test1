@@ -18,8 +18,12 @@ export default function Table1() {
       <table>
         {data.map((item) => (
           <tr>
-            <td className="td">{item.name}</td>
-            <td className="td">{item.email}</td>
+            <td className="td">
+              <input type="text" value={item.name} />
+            </td>
+            <td className="td">
+              <input type="text" value={item.email} />
+            </td>
           </tr>
         ))}
       </table>

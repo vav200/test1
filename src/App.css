@@ -26,6 +26,10 @@
   border: 1px solid gray;
   border-collapse: collapse;
 }
+input {
+  border: none;
+  outline: none;
+}
 /* .fon {
   background: darkslategrey;
   opacity: 0.5;
