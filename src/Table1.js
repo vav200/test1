@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 export default function Table1() {
   const [data, setData] = useState([
-    { name: "John", email: "sfaf@dfgdf" },
-    { name: "Sara", email: "iubsdfi@kkk" },
-    { name: "Piete", email: "hjdiokr@lockc" },
-    { name: "Vliam", email: "4587@nhj" },
-    { name: "Bob", email: "bbb@hgj" },
+    // { name: "John", email: "sfaf@dfgdf" },
+    // { name: "Sara", email: "iubsdfi@kkk" },
+    // { name: "Piete", email: "hjdiokr@lockc" },
+    // { name: "Vliam", email: "4587@nhj" },
+    // { name: "Bob", email: "bbb@hgj" },
   ]);
 
   console.log(data);
