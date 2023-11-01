@@ -19,7 +19,7 @@ export default function Table1() {
         {data.map((item) => (
           <tr>
             <td className="td">{item.name}</td>
-            <td>{item.email}</td>
+            <td className="td">{item.email}</td>
           </tr>
         ))}
       </table>
