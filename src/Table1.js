@@ -13,12 +13,13 @@ export default function Table1() {
     fetch("https://technical-task-api.icapgroupgmbh.com/api/table/")
       .then((data) => data.json())
       .then((data) => {
-        console.log(data);
+        console.log(data.results);
         return data.results.map((item) => (
-          <tr>
-            <td>{item.name}</td>
-            <td>{item.email}</td>
-          </tr>
+          // <tr>
+          //   <td>{item.name}</td>
+          //   <td>{item.email}</td>
+          // </tr>
+          <li>{item.name}</li>
         ));
       });
   }
@@ -26,7 +27,7 @@ export default function Table1() {
   return (
     <>
       <h1>Таблица</h1>
-      <table>{getData()}</table>
+      <ul>{getData()}</ul>
     </>
   );
 }
