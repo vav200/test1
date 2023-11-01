@@ -10,11 +10,11 @@ export default function Table1() {
   // });
 
   function getData() {
-    fetch("https://technical-task-api.icapgroupgmbh.com/api/table/")
+    return fetch("https://technical-task-api.icapgroupgmbh.com/api/table/")
       .then((data) => data.json())
       .then((data) => {
         console.log(data);
-        data.map((item) => (
+        data.results.map((item) => (
           <tr>
             <td>{item.name}</td>
             <td>{item.email}</td>
