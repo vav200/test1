@@ -25,8 +25,8 @@ export default function Table1() {
 
   return (
     <>
-      <h1>Таблица новая</h1>
-      <table>{getData}</table>
+      <h1>Таблица</h1>
+      <table>{getData()}</table>
     </>
   );
 }
