@@ -18,7 +18,7 @@ export default function Table1() {
         console.log(data.results);
         setData(data.results);
       });
-  });
+  }, []);
 
   function sortName() {
     let sortdat = [...data];
