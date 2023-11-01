@@ -16,10 +16,10 @@ export default function Table1() {
     <>
       <h1>Таблица</h1>
       <table>
-        {data.map((item) => (
+        {data.map((item, ind, arr) => (
           <tr>
             <td className="td">
-              <input type="text" value={item.name} />
+              <input type="text" value={item.name} onChange={(e) => (arr[ind] = e.target.value)} />
             </td>
             <td className="td">
               <input type="text" value={item.email} />
