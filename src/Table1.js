@@ -10,7 +10,7 @@ export default function Table1() {
   // });
 
   function getData() {
-    return fetch("https://technical-task-api.icapgroupgmbh.com/api/table/")
+    fetch("https://technical-task-api.icapgroupgmbh.com/api/table/")
       .then((data) => data.json())
       .then((data) => {
         console.log(data.results);
