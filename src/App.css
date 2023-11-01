@@ -22,6 +22,9 @@
 .admpanel_active {
   opacity: 1;
 }
+.td {
+  border: 1px solid gray;
+}
 /* .fon {
   background: darkslategrey;
   opacity: 0.5;
