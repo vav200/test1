@@ -14,7 +14,7 @@ export default function Table1() {
       .then((data) => data.json())
       .then((data) => {
         console.log(data);
-        data.results.map((item) => (
+        data.map((item) => (
           <tr>
             <td>{item.name}</td>
             <td>{item.email}</td>
@@ -26,7 +26,7 @@ export default function Table1() {
   return (
     <>
       <h1>Таблица новая</h1>
-      <table>{getData()}</table>
+      <table>{getData}</table>
     </>
   );
 }
